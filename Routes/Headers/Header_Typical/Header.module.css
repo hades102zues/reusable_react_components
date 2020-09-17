@@ -1,6 +1,11 @@
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
+
+  /*belows styles necessary for when using in a hero*/
+  position: relative;
+  z-index: 7;
+  background-color: #fafafa;
 }
 
 .header_space {

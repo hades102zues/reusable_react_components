@@ -1,10 +1,15 @@
 import React from "react";
 
 import PageFrame from "../Routes/UI/PageFrame/PageFrame";
-import Header_LogoMedia from "../Routes/Header_LogoMedia/Header";
-import Header_LogoMedia_Nav from "../Routes/Header_LogoMedia_Nav/Header";
-import Header_Typical from "../Routes/Header_Typical/Header";
+import Header_LogoMedia from "../Routes/Headers/Header_LogoMedia/Header";
+import Header_LogoMedia_Nav from "../Routes/Headers/Header_LogoMedia_Nav/Header";
+import Header_Typical from "../Routes/Headers/Header_Typical/Header";
 
+import BasicFooter from "../Routes/Footers/BasicFooter/Footer";
+import ColsFooter from "../Routes/Footers/3ColFooter/Footer";
+
+import MiniHero from "../Routes/Heros/MiniHero/MiniHero";
+import LargeHero from "../Routes/Heros/LargeHero/Hero";
 const home = () => {
   const navList = [
     "Home",
@@ -17,14 +22,25 @@ const home = () => {
 
   return (
     <React.Fragment>
-      {/* <PageFrame pageTitle="Page Title">
-        <div>Hi</div>
-      </PageFrame> */}
-      <Header_Typical />
-      <React.Fragment>
-        <Header_LogoMedia />
-        <Header_LogoMedia_Nav />
-      </React.Fragment>
+      {/* <Header_Typical /> */}
+      {/* <Header_LogoMedia /> */}
+      {/* <Header_LogoMedia_Nav /> */}
+
+      {/* <BasicFooter /> */}
+      {/* <ColsFooter /> */}
+
+      {/* <MiniHero headline="This is a Mini Hero!" heroImage="/hero.jpg">
+        <Header_Typical />
+      </MiniHero> */}
+
+      {/* <LargeHero
+        standoutText="The Championship is here"
+        supportingText="Welcome to Company where your lorem ipsum and
+      comfort is our priority. We go above and beyond to ensure good
+      ispumm loermn disimoee in a comforting  forgeti primeno"
+      >
+        <Header_Typical />
+      </LargeHero> */}
     </React.Fragment>
   );
 };

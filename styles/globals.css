@@ -44,6 +44,10 @@ ul {
   list-style: none;
 }
 
+.section_padding {
+  padding: 40px 0;
+}
+
 .wrapper {
   width: 85%;
   margin: 0 auto;

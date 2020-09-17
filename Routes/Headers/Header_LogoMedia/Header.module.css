@@ -1,6 +1,10 @@
 .header0 {
   background-color: #583b4c;
   color: white; /*affects the colors of the material icons*/
+
+  /*belows styles necessary for when using in a hero*/
+  position: relative;
+  z-index: 5;
 }
 .socialAdj {
   height: 65px;
