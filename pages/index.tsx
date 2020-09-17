@@ -10,6 +10,7 @@ import ColsFooter from "../Routes/Footers/3ColFooter/Footer";
 
 import MiniHero from "../Routes/Heros/MiniHero/MiniHero";
 import LargeHero from "../Routes/Heros/LargeHero/Hero";
+import SideHero from "../Routes/Heros/SideHero/Hero";
 const home = () => {
   const navList = [
     "Home",
@@ -22,7 +23,7 @@ const home = () => {
 
   return (
     <React.Fragment>
-      {/* <Header_Typical /> */}
+      <Header_Typical />
       {/* <Header_LogoMedia /> */}
       {/* <Header_LogoMedia_Nav /> */}
 
@@ -41,6 +42,7 @@ const home = () => {
       >
         <Header_Typical />
       </LargeHero> */}
+      <SideHero />
     </React.Fragment>
   );
 };

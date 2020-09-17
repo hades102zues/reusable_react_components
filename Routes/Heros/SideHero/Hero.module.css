@@ -1,0 +1,126 @@
+.sideHero {
+  padding: 40px 0;
+}
+
+.layoutBox {
+  display: flex;
+}
+
+.layoutBox_left {
+  width: 50%;
+}
+.standoutText {
+  font-size: 40px;
+  font-weight: 750;
+  width: 65%;
+}
+
+.supportingText {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.linkBox {
+  margin-top: 40px;
+  display: flex;
+}
+
+.link {
+  height: 65px;
+  width: 192px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* display: inline-block; */
+}
+
+.link a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link__color {
+  background-color: #005ecb;
+}
+
+.link__color a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.link__default {
+  background-color: rgb(226, 232, 240);
+}
+
+.link__default a {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(74, 85, 104);
+}
+
+.layoutBox_right {
+  width: 50%;
+
+  /* padding-top: 120px; */
+}
+.bgImage {
+  width: 100%;
+  height: 100%;
+}
+
+.bgImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media all and (max-width: 1023px) {
+  .layoutBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .layoutBox_left,
+  .layoutBox_right {
+    width: 100%;
+  }
+  .layoutBox_right {
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 719px) {
+  .standoutText {
+    width: 90%;
+    font-size: 28px;
+  }
+  .supportingText {
+    font-size: 16px;
+  }
+
+  .linkBox {
+    flex-direction: column;
+  }
+  .link {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (min-width: 720px) and (max-width: 1023px) {
+  .layoutBox_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .layoutBox_left,
+  .layoutBox_right {
+    text-align: center;
+  }
+}
