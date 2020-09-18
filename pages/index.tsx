@@ -18,6 +18,9 @@ import AddBoxIcon from "@material-ui/icons/AddBox";
 import StandardCard from "../Routes/Cards/StandardCard/Card";
 import StandardCardBox from "../Routes/Cards/StandardCardBox/CardsBox";
 
+import StandardTaleLi from "../Routes/Tales/StandardTale_Li/Tale";
+import StandardTaleRi from "../Routes/Tales/StandardTale_Ri/Tale";
+
 const home = () => {
   return (
     <React.Fragment>
@@ -44,7 +47,7 @@ const home = () => {
       {/* <PageFrame pageTitle="What you need" /> */}
 
       <div className="wrapper">
-        <StandardCardBox>
+        {/* <StandardCardBox>
           {["", "", "", "", "", ""].map((item, i) => (
             <StandardCard
               title="Secure Lound Happiness"
@@ -53,7 +56,10 @@ const home = () => {
               iconColor="#e83e8c"
             />
           ))}
-        </StandardCardBox>
+        </StandardCardBox> */}
+
+        <StandardTaleLi />
+        <StandardTaleRi />
       </div>
     </React.Fragment>
   );

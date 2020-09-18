@@ -1,0 +1,163 @@
+.tale {
+  display: flex;
+}
+
+.tale_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.tale_img {
+  height: 418px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  /* width: 376px; */
+}
+
+.tale_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.tale_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.tale_value {
+  font-size: 14px;
+}
+.tale_title {
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-top: 22px;
+}
+.tale_description {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+.tale_stats {
+  width: 100%;
+  margin-top: 22px;
+  display: flex;
+}
+.stat_item {
+  /* width: 75px; */
+
+  padding: 0 10px;
+}
+.stat {
+  font-size: 18px;
+  text-align: center;
+}
+.stat_title {
+  text-align: center;
+  font-weight: 750;
+  font-size: 20px;
+}
+
+.linkBox {
+  margin-top: 40px;
+  display: flex;
+}
+
+.link {
+  height: 65px;
+  width: 192px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* display: inline-block; */
+}
+
+.link a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link__color {
+  background-color: #005ecb;
+}
+
+.link__color a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.link__default {
+  background-color: rgb(226, 232, 240);
+}
+
+.link__default a {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(74, 85, 104);
+}
+
+@media all and (max-width: 750px) {
+  .tale {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tale_left,
+  .tale_right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .tale_img {
+    width: 350px;
+    height: 350px;
+  }
+  .tale_value,
+  .tale_title,
+  .tale_description {
+    text-align: center;
+  }
+
+  .tale_value {
+    margin-top: 22px;
+  }
+  .tale_title {
+    font-size: 38px;
+  }
+  .tale_description {
+    font-size: 14px;
+  }
+  .tale_stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stat_item {
+    margin-top: 10px;
+  }
+  .linkBox {
+    flex-direction: column;
+    width: 210px;
+  }
+  .link {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .tale_img {
+    width: 100%;
+  }
+}
