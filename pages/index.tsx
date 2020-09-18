@@ -17,6 +17,7 @@ import PageFrame from "../Routes/PageFrame/PageFrame";
 import AddBoxIcon from "@material-ui/icons/AddBox";
 import StandardCard from "../Routes/Cards/StandardCard/Card";
 import TeamFace from "../Routes/Cards/TeamFace/Card";
+import Statement from "../Routes/Cards/Statement/Statement";
 import StandardCardBox from "../Routes/Cards/StandardCardBox/CardsBox";
 
 import StandardTaleLi from "../Routes/Tales/StandardTale_Li/Tale";
@@ -68,6 +69,8 @@ const home = () => {
 
         {/* <StandardTaleLi />
         <StandardTaleRi /> */}
+        <Statement />
+        <div>hi</div>
       </div>
     </React.Fragment>
   );
