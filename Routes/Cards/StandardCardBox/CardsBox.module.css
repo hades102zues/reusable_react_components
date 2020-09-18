@@ -1,0 +1,27 @@
+.box {
+  width: 950px; /*this value specifically works with items at an effective width 0f 303px*/
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 1144px) {
+  .box {
+    width: 623px;
+  }
+}
+@media all and (max-width: 719px) {
+  .box {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+
+    /*use the below styles and uncomment the two above iff the client has over six items*/
+    /* flex-flow: row nowrap;
+    overflow-x: auto; */
+  }
+}

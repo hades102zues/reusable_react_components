@@ -45,3 +45,9 @@
 .showcase_headline {
   font-size: 60px;
 }
+
+@media all and (max-width: 719px) {
+  .showcase_headline {
+    font-size: 38px;
+  }
+}

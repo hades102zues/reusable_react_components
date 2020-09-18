@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
   const iconStyles = makeStyles({
     root: {
       marginRight: 20,
-      fontSize: 22,
+      fontSize: 32,
     },
   });
 
