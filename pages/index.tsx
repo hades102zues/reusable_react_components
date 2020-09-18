@@ -16,6 +16,7 @@ import PageFrame from "../Routes/PageFrame/PageFrame";
 
 import AddBoxIcon from "@material-ui/icons/AddBox";
 import StandardCard from "../Routes/Cards/StandardCard/Card";
+import TeamFace from "../Routes/Cards/TeamFace/Card";
 import StandardCardBox from "../Routes/Cards/StandardCardBox/CardsBox";
 
 import StandardTaleLi from "../Routes/Tales/StandardTale_Li/Tale";
@@ -47,19 +48,26 @@ const home = () => {
       {/* <PageFrame pageTitle="What you need" /> */}
 
       <div className="wrapper">
-        {/* <StandardCardBox>
-          {["", "", "", "", "", ""].map((item, i) => (
+        <StandardCardBox>
+          {/* {["", "", "", "", "", ""].map((item, i) => (
             <StandardCard
               title="Secure Lound Happiness"
               description="Welcome to our React Creative Agency, React Portfolio and Corporate Multi-Purpose Template."
               icon={AddBoxIcon}
               iconColor="#e83e8c"
             />
-          ))}
-        </StandardCardBox> */}
+          ))} */}
+          {/* {["", "", "", "", "", ""].map((item, i) => (
+            <TeamFace
+              title="Tanya Green"
+              description="Welcome to our React Creative Agency, React Portfolio and Corporate Multi-Purpose Template.Welcome to our React Creative Agency, React Portfolio and Corporate Multi-Purpose Template."
+              pic="/person.jpg"
+            />
+          ))} */}
+        </StandardCardBox>
 
-        <StandardTaleLi />
-        <StandardTaleRi />
+        {/* <StandardTaleLi />
+        <StandardTaleRi /> */}
       </div>
     </React.Fragment>
   );
