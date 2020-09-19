@@ -25,6 +25,8 @@ import StandardTaleRi from "../Routes/Tales/StandardTale_Ri/Tale";
 
 import StandardAccordion from "../Routes/Accordions/StandardAccordion/Accordians";
 
+import MVAbout from "../Routes/Abouts/MVAbout/About";
+
 const home = () => {
   return (
     <React.Fragment>
@@ -73,9 +75,11 @@ const home = () => {
         <StandardTaleRi /> */}
         {/* <Statement /> */}
 
-        <div style={{ width: "50%" }}>
+        {/* <div style={{ width: "50%" }}>
           <StandardAccordion />
-        </div>
+        </div> */}
+
+        <MVAbout />
       </div>
     </React.Fragment>
   );
