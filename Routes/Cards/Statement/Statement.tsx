@@ -22,6 +22,7 @@ const Statement = () => {
     },
   });
   const classes = useStyles();
+
   return (
     <div className={styles.statement}>
       <img src={imgSrc} alt="This is the image presented in this statement." />

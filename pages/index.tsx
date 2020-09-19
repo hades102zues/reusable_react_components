@@ -23,6 +23,8 @@ import StandardCardBox from "../Routes/Cards/StandardCardBox/CardsBox";
 import StandardTaleLi from "../Routes/Tales/StandardTale_Li/Tale";
 import StandardTaleRi from "../Routes/Tales/StandardTale_Ri/Tale";
 
+import StandardAccordion from "../Routes/Accordions/StandardAccordion/Accordians";
+
 const home = () => {
   return (
     <React.Fragment>
@@ -69,8 +71,11 @@ const home = () => {
 
         {/* <StandardTaleLi />
         <StandardTaleRi /> */}
-        <Statement />
-        <div>hi</div>
+        {/* <Statement /> */}
+
+        <div style={{ width: "50%" }}>
+          <StandardAccordion />
+        </div>
       </div>
     </React.Fragment>
   );
